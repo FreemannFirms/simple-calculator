@@ -2,10 +2,13 @@ let numberButtons = document.querySelectorAll(".number-button");
 let operatorButtons = document.querySelectorAll(".operator-button");
 let actionButtons = document.querySelectorAll(".action-button");
 let output = document.querySelector("#result");
+let op = document.querySelector("#operator")
 
 let operator = null
 let pressedOperator = false
 let initialvalue = 0
+let answer = operatorButtons
+
 
 numberButtons.forEach(button =>{
     button.addEventListener('click', function(){
@@ -23,7 +26,7 @@ operatorButtons.forEach(button =>{
         operator = button.textContent
         pressedOperator = true
         initialvalue = output.textContent
-        console.log(initialvalue);
+        // console.log(initialvalue);
     })
 })
 
@@ -41,6 +44,9 @@ actionButtons.forEach(button =>{
             }
             if(operator == '/'){
                 output.textContent = Number(initialvalue) / Number(output.textContent)
+            }
+            if(operator == 'MOD'){
+                output.textContent = Number(initialvalue) % Number(output.textContent)
             }
 
             operator = null

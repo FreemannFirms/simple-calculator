@@ -4,33 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Document</title>
 </head>
 <body>
     <h1>Simple Calculator</h1>
-    <span id="result">0</span>
-    <button class="number-button">1</button>
-    <button class="number-button">2</button>
-    <button class="number-button">3</button>
-
-    <button class="number-button">4</button>
-    <button class="number-button">5</button>
-    <button class="number-button">6</button>
-
-    <button class="number-button">7</button>
-    <button class="number-button">8</button>
-    <button class="number-button">8</button>
-
-    <button class="operator-button">+</button>
-    <button class="operator-button">-</button>
-    <button class="operator-button">x</button>
-    <button class="operator-button">/</button>
-    <button class="operator-button">MOD</button>
-
-    <button class="action-button">BK</button>
-    <button class="action-button">C</button>
-    <button class="action-button">=</button>
+    <div class="body-container">
+        <div class="output">
+            <span id="result">0</span>
+            <span id="operator-button">0</span>
+        </div>
+        <div class="content">
+            <div class="row">
+                <button class="action-button">C</button>
+                <button class="operator-button">/</button>
+                <button class="operator-button">x</button>
+                <button class="action-button">BK</button>
+            </div>
+            <div class="row">
+                <button class="number-button">7</button>
+                <button class="number-button">8</button>
+                <button class="number-button">9</button>
+                <button class="operator-button">+</button>
+            </div>
+            <div class="row">
+                <button class="number-button">4</button>
+                <button class="number-button">5</button>
+                <button class="number-button">6</button>
+                <button class="operator-button">-</button>
+            </div>
+            <div class="row">
+                <button class="number-button">1</button>
+                <button class="number-button">2</button>
+                <button class="number-button">3</button>  
+                <button class="action-button">=</button>  
+            </div>
+            <div class="row">
+                <button class="number-button">0</button>
+                <button class="operator-button">MOD</button>
+            </div>            
+        </div>
+    </div>
 </body>
 </html>
