@@ -7,7 +7,6 @@ let op = document.querySelector("#operator")
 let operator = null
 let pressedOperator = false
 let initialvalue = 0
-let answer = operatorButtons
 
 
 numberButtons.forEach(button =>{
